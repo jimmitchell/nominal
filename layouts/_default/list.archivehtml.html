@@ -1,0 +1,18 @@
+{{ define "main" }}
+{{ if .Title }}
+<h2 class="page-title">{{ .Title }}</h2>
+{{ end }}
+<main>
+	{{ $list := (where .Site.Pages "Type" "post") }}
+	{{ range $list }}
+	<article>
+		<i class="fa-regular fa-calendar"></i>
+		<a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Monday, January 2, 2006" }}</time></a></br>
+		{{ if .Title }}
+		<span><b>{{ .Title }}</b>: </span>
+		{{ end }}
+		<span>{{ .Summary | truncate 125 }}</span>
+    </article>
+	{{ end }}
+</main>
+{{ end }}

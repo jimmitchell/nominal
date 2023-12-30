@@ -1,0 +1,15 @@
+/* DESIGNER */
+
+Name: Jim Mitchell
+Web: jimmitchell.org
+Contact: hello [at] jim mitchell dot org
+Micro.blog: @jimmitchell
+Mastodon: @jimmitchell@mastodon.social
+From: Huntington Beach, CA, USA
+
+/* SITE */
+
+Standards: HTML5, CSS3
+Software: Hugo, Git, VSCode, Pixelmator
+Design Repo: https://github.com/jimmitchell/nominal
+Hosted by: Micro.blog
