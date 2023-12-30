@@ -6,6 +6,13 @@
     {{ end }}
     <p class="post-date">{{ .Date.Format "Monday, January 2, 2006" }}</p>
     {{ .Content }}
+    {{ if .Params.categories }}
+    <ul class="post-tags">
+        {{ range .Params.categories }} {{ $href := print (absURL "categories/") (urlize .) }}
+        <li><a href="{{ $href }}">#{{ . }}</a></li>
+        {{ end }}
+    </ul>
+    {{ end }}
     {{ if or (templates.Exists "partials/reply-by-email.html") (templates.Exists "partials/conversation-link.html") (templates.Exists "partials/tinylytics.html") }}
     <ul class="reply-buttons">
         {{ if and (templates.Exists "partials/tinylytics.html") (.Site.Params.show_kudos) (ne (.Site.Params.site_id | default "") "") }}
@@ -19,13 +26,6 @@
         {{ end }}
         {{ if templates.Exists "partials/reply-by-email.html" }}
         <li>{{ partial "reply-by-email.html" . }}</li>
-        {{ end }}
-    </ul>
-    {{ end }}
-    {{ if .Params.categories }}
-    <ul class="post-tags">
-        {{ range .Params.categories }} {{ $href := print (absURL "categories/") (urlize .) }}
-        <li><a href="{{ $href }}">#{{ . }}</a></li>
         {{ end }}
     </ul>
     {{ end }}
