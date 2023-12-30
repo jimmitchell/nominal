@@ -98,6 +98,31 @@ pre code {
     color: inherit;
     padding: 0;
 }
+input[type=button],
+input[type=submit] {
+        background-color: var(--accent-2);
+        border: none;
+        color: var(--text);
+        padding: 6px 12px;
+        text-decoration: none;
+        margin: 4px 1px;
+        cursor: pointer;
+	border-radius: 6px;
+}
+input[type=button]:hover,
+input[type=button]:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+	color: #fff;
+	background: var(--link);
+}
+input[type=email] {
+	padding: 5px 8px;
+	border: 1px solid var(--accent-3);
+	border-radius: 6px;
+	margin: 4px 1px;
+	width: 60%;
+}
 
 /*** Header content ***/
 header {
@@ -166,6 +191,22 @@ article img {
 	border-radius: 6px;
 	margin: .5em 0;
 }
+
+.reply-buttons {
+	list-style-type: none;
+	padding: 0;
+	margin-top: 3rem;
+}
+.reply-buttons li {
+	display: inline;
+	margin-right: 0em;
+	line-height: 1.6rem;
+	white-space: nowrap;
+}
+.reply-buttons li *, .reply-buttons li *:hover {
+	border: none;
+}
+
 .main-nav {
 	margin-bottom: 3rem;
 }
