@@ -157,13 +157,14 @@ header a:active {
 
 /*** Article content ***/
 article {
-	margin: 0 0 4rem 0;
+	margin: 4rem 0;
 }
 article.update {
 	border: 1px solid var(--accent-2);
 	background: var(--accent-1);
 	padding: 2rem 2rem .5rem 2rem;
 	border-radius: 6px;
+	margin: 2rem 0;
 }
 article:last-of-type,
 .single article {
