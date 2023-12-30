@@ -51,8 +51,8 @@ a:active {
 blockquote {
 	border-left: 2px solid var(--accent-3);
 	color: var(--accent-3);
-	margin: 1.25em 0;
-	padding: 0 1.25em;
+	margin: 2rem 0;
+	padding: 0 2rem;
 	font-style: italic;
 }
 table {
@@ -79,10 +79,10 @@ pre {
     border-radius: 6px;
     color: var(--background);
     line-height: 1.5;
-    margin: 1.5em 0;
+    margin: 2rem 0;
     overflow-wrap: normal;
     overflow-x: scroll;
-    padding: 1.5em;
+    padding: 2rem;
     white-space: pre-line;
     word-wrap: normal;
 }
@@ -163,8 +163,11 @@ article.Updates,
 article.Photos {
 	border: 1px solid var(--accent-2);
 	background: var(--accent-1);
-	padding: 1em 1em .2em 1em;
-	border-radius: .5em;
+	padding: 1rem 1rem .2rem 1rem;
+	border-radius: 6px;
+}
+article.Photos {
+	margin-bottom: .7rem;
 }
 article:last-of-type,
 .single article {
@@ -191,7 +194,7 @@ article img {
 	width: 100%;
 	height: auto;
 	border-radius: 6px;
-	margin: .5em 0;
+	margin: 1rem 0;
 }
 .post-tags {
 	list-style: none;
@@ -210,7 +213,7 @@ article img {
 }
 .reply-buttons li {
 	display: inline;
-	margin-right: 0em;
+	margin-right: 0;
 	line-height: 1.6rem;
 	white-space: nowrap;
 }
