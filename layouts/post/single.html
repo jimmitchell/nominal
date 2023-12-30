@@ -1,18 +1,11 @@
 {{ define "main" }}
 <main>
-    <article class="{{ range .Params.categories }} {{ . }}{{ end }}">
+    <article{{ if not .Title }} class="update" {{ end }}>
     {{ if .Title }}
     <h2 class="post-title">{{ .Title }}</h2>
     {{ end }}
     <p class="post-date">{{ .Date.Format "Monday, January 2, 2006" }}</p>
     {{ .Content }}
-    {{ if .Params.categories }}
-    <ul class="post-tags">
-        {{ range .Params.categories }} {{ $href := print (absURL "categories/") (urlize .) }}
-        <li><a href="{{ $href }}">#{{ . }}</a></li>
-        {{ end }}
-    </ul>
-    {{ end }}
     </article>
     {{ if or (templates.Exists "partials/reply-by-email.html") (templates.Exists "partials/conversation-link.html") (templates.Exists "partials/tinylytics.html") }}
     <ul class="reply-buttons">
