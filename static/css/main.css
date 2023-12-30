@@ -163,11 +163,11 @@ article.Updates,
 article.Photos {
 	border: 1px solid var(--accent-2);
 	background: var(--accent-1);
-	padding: 1rem 1rem .2rem 1rem;
+	padding: 2rem 2rem .5rem 2rem;
 	border-radius: 6px;
 }
 article.Photos {
-	margin-bottom: .7rem;
+	margin-bottom: 1.5rem;
 }
 article:last-of-type,
 .single article {
