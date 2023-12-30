@@ -134,7 +134,7 @@ header a:active {
 article {
 	margin: 0 0 4rem 0;
 }
-article.update {
+article.Update {
 	border: 1px solid var(--accent-2);
 	background: var(--accent-1);
 	padding: 1em 1em .2em 1em;
