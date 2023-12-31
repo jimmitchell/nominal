@@ -169,7 +169,7 @@ article:last-of-type, .single article {
 .post-date {
 	font-size: 1.6rem;
 }
-article .post-date {
+article.update .post-date {
 	margin-bottom: -10px;
 }
 article img {
