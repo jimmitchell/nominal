@@ -67,7 +67,9 @@ a:hover, a:active {
 	text-decoration: underline;
 }
 hr {
-	border-top: 1px solid var(--accent-2);
+	border: none; 
+	height: 1px;
+	background: var(--accent-2);
 }
 blockquote {
 	border-left: 2px solid var(--accent-3);
