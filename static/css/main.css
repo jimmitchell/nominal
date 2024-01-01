@@ -7,6 +7,26 @@
 	--accent-2: #e3e3e3;
 	--accent-3: #666;
 }
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background: #282828;
+		--text: #f8f8f2;
+		--link: #00a1e0;
+		--accent-1: #666;
+		--accent-2: #ccc;
+		--accent-3: #f8f8f2;
+	}
+	.microblog_post {border-color: var(--accent-2) !important;}
+	.footnote-button {
+		background: hsla(0,0%,43%,.5) !important;
+	}
+	.footnote-button:hover {
+		background: hsla(0,0%,43%,.75) !important;
+	}
+	.footnote-button:after {
+		color: #f8f8f2 !important;
+	}
+}
 *, *::before, *::after {
     box-sizing: border-box;
 }
