@@ -70,6 +70,7 @@ hr {
 	border: none; 
 	height: 1px;
 	background: var(--accent-2);
+	margin: 4rem 0;
 }
 blockquote {
 	border-left: 2px solid var(--accent-3);
