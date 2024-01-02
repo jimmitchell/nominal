@@ -18,13 +18,13 @@
 	}
 	.microblog_post {border-color: var(--accent-2) !important;}
 	.footnote-button {
-		background: hsla(0,0%,43%,.5) !important;
+		background: hsla(0,0%,45%,.5) !important;
 	}
 	.footnote-button:hover {
-		background: hsla(0,0%,43%,.75) !important;
+		background: hsla(0,0%,45%,.75) !important;
 	}
 	.footnote-button:after {
-		color: #f8f8f2 !important;
+		color: #f8f8f8 !important;
 	}
 }
 *, *::before, *::after {
