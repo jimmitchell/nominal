@@ -180,6 +180,9 @@ article.update {
 article:last-of-type, .single article {
 	margin-bottom: 0;
 }
+article h2, article h3 {
+	margin-top: 4rem;
+}
 .post-title, .post-date {
 	margin: 0;
 }
