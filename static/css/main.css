@@ -10,11 +10,11 @@
 @media (prefers-color-scheme: dark) {
 	:root {
 		--background: #191919;
-		--text: #f8f8f2;
+		--text: #f8f8f8;
 		--link: #14bdff;
-		--accent-1: #242424;
-		--accent-2: #484848;
-		--accent-3: #f8f8f2;
+		--accent-1: #2c2c2c;
+		--accent-2: #4c4c4c;
+		--accent-3: #f8f8f8;
 	}
 	.microblog_post {border-color: var(--accent-2) !important;}
 	.footnote-button {
