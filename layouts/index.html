@@ -8,11 +8,11 @@
             <p class="post-date">{{ .Date.Format "Monday, January 2, 2006" }}</p>
             <p>{{ .Summary | safeHTML }}</p>
 			{{ if .Truncated }}
-      		 <p><a href="{{ .RelPermalink }}">Continue reading &rarr;</a></p>
+      		 <p><a href="{{ .RelPermalink }}">Continue reading →</a></p>
     	    {{ end }}
             {{ else }}
-            <p class="post-date"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }}</a></p>
             {{ .Content }}
+			<p class="post-date"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }} →</a></p>
             {{ end }}
         </article>
         {{ end }}
@@ -20,12 +20,12 @@
             <ul>
                 <li>
                 {{ if $paginator.HasPrev }}
-                <a href="{{ $paginator.Prev.URL }}">&larr; Newer</a>
+                <a href="{{ $paginator.Prev.URL }}">← Newer</a>
                 {{ end }}
                 </li>
                 <li>
                 {{ if $paginator.HasNext }}
-                <a href="{{ $paginator.Next.URL }}">Older &rarr;</a>
+                <a href="{{ $paginator.Next.URL }}">Older →</a>
             </ul>
         </nav>
         {{ end }}

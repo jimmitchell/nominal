@@ -1,7 +1,7 @@
 :root {
 	-webkit-font-smoothing: antialiased;
 	--background: #fff;
-	--text: #333;
+	--text: #262626;
 	--link: #00a1e0;
 	--accent-1: #f8f8f8;
 	--accent-2: #e3e3e3;
@@ -54,9 +54,9 @@ html {
 body {
 	background: var(--background);
 	color: var(--text);
-	font-size: 1.8rem;
+	font-size: 1.9rem;
 	margin: 0 auto;
-	max-width: 75rem;
+	max-width: 76rem;
 	padding: 1rem 2rem;
 }
 a {
@@ -173,8 +173,8 @@ article {
 article.update {
 	border: 1px solid var(--accent-2);
 	background: var(--accent-1);
-	padding: 2rem 2rem .5rem 2rem;
-	border-radius: 6px;
+	padding: .1rem 2rem 2rem 2rem;
+	border-radius: 12px;
 	margin: 2rem 0;
 }
 article:last-of-type, .single article {
@@ -197,9 +197,7 @@ article h2, article h3 {
 }
 .post-date {
 	font-size: 1.6rem;
-}
-article.update .post-date {
-	margin-bottom: -10px;
+	color: var(--accent-3);
 }
 article img {
 	width: 100%;
@@ -221,6 +219,7 @@ article img {
 	list-style-type: none;
 	padding: 0;
 	margin-top: 3rem;
+	text-align: center;
 }
 .reply-buttons li {
 	display: inline;
