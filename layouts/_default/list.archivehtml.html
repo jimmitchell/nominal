@@ -10,7 +10,7 @@
 		{{ if .Title }}
 		<span><b>{{ .Title }}</b></span>
 		{{ end }}
-		<span>{{ .Summary | truncate 150 }}</span>
+		<span>{{ .Summary | safeHTML truncate 150  }}</span>
     </article>
 	{{ end }}
 </main>

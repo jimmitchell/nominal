@@ -12,6 +12,9 @@
     </article>
     {{ if or (templates.Exists "partials/reply-by-email.html") (templates.Exists "partials/conversation-link.html") (templates.Exists "partials/tinylytics.html") }}
     <ul class="reply-buttons">
+        {{ if and (templates.Exists "partials/tinylytics.html") (.Site.Params.show_hits) (ne (.Site.Params.site_id | default "") "") }}
+        <li><span class="tiny_hits">👀 <span class="tinylytics_hits" data-path="{{ .Page.RelPermalink }}"></span></span></li>
+        {{ end }}
         {{ if and (templates.Exists "partials/tinylytics.html") (.Site.Params.show_kudos) (ne (.Site.Params.site_id | default "") "") }}
         <li><button class="tinylytics_kudos" data-path="{{ .Page.RelPermalink }}"></button></li>
         {{ end }}
