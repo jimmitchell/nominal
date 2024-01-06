@@ -7,9 +7,9 @@
             <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
             <p class="post-date">{{ .Date.Format "Monday, January 2, 2006" }}</p>
             {{ else }}
-            <p class="post-date"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }}</a></p>
             {{ end }}
             {{ .Content }}
+            <p class="post-date"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }} &rarr;</a></p>
         </article>
         {{ end }}
         <nav class="main-nav">
