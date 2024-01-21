@@ -1,6 +1,6 @@
 {{ define "main" }}
 <main>
-    <article{{ if not .Title }} class="update" {{ end }}>
+    <article>
     {{ if .Title }}
     <h2 class="post-title">{{ .Title }}</h2>
 	<p class="post-date">{{ .Date.Format "Monday, January 2, 2006" }}</p>
@@ -16,7 +16,7 @@
         <li><span class="tiny_hits">👀 <span class="tinylytics_hits" data-path="{{ .Page.RelPermalink }}"></span></span></li>
         {{ end }}
         {{ if and (templates.Exists "partials/tinylytics.html") (.Site.Params.show_kudos) (ne (.Site.Params.site_id | default "") "") }}
-        <li><button class="tinylytics_kudos" data-path="{{ .Page.RelPermalink }}"></button></li>
+        <li><button id="al" aria-label="Kudo Button" class="tinylytics_kudos" data-path="{{ .Page.RelPermalink }}"></button></li>
         {{ end }}
         {{ if templates.Exists "partials/conversation-link.html" }}
         <li>{{ partial "conversation-link.html" . }}</li>

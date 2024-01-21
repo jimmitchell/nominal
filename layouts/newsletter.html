@@ -65,18 +65,18 @@
 
 	<div class="footer">
 
-		<a href="{{ .Footer.UnsubscribeURL }}">Unsubscribe</a>&nbsp;|&nbsp;
+		<a href="{{ .Footer.UnsubscribeURL }}">Unsubscribe</a> | 
 
 		{{ if eq (len .Pages) 1 }}
 		{{ with index .Pages 0 }}
-		<a href="{{ .Permalink }}">View in browser</a>&nbsp;|&nbsp;
+		<a href="{{ .Permalink }}">View in browser</a> | 
 		{{ end }}
 		{{ end }}
 
 		<a href="{{ .Site.BaseURL }}">{{ .Site.Hostname }}</a>
 
 		{{ if gt (len .Footer.MailingAddress) 0 }}
-		&nbsp;|&nbsp;{{ .Footer.MailingAddress }}
+		 | {{ .Footer.MailingAddress }}
 		{{ end }}
 
 	</div>
