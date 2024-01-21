@@ -5,10 +5,10 @@
         {{ partial "header.html" . }}
         {{ block "main" . }}{{ end }}
         {{ partial "footer.html" . }}
-        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
         {{ range .Site.Params.plugins_js }}
         <script src="{{ . }}"></script>
         {{ end }}
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
         <script defer="defer" type="text/javascript" src="{{ "js/prism.js" | relURL }}"></script>
         <script defer="defer" type="text/javascript" src="{{ "js/external-links.min.js" | relURL }}"></script>
     </body>
