@@ -2,7 +2,8 @@
 	-webkit-font-smoothing: antialiased;
 	--background: #fff;
 	--text: #262626;
-	--link: #ef5b5b;
+	--link: #e06050;
+	--link-hover-bg: #f5e8e3;
 	--accent-1: #f8f8f8;
 	--accent-2: #e3e3e3;
 	--accent-3: #666;
@@ -11,7 +12,8 @@
 	:root {
 		--background: #191919;
 		--text: #f8f8f8;
-		--link: #ef5b5b;
+		--link: #e06050;
+		--link-hover-bg: #382320;
 		--accent-1: #2c2c2c;
 		--accent-2: #4c4c4c;
 		--accent-3: #d9d9d9;
@@ -47,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
     isolation: isolate;
 }
 html {
-	font-family: system-ui, sans-serif;
+	font-family: "Avenir Next", Avenir, system-ui, sans-serif;
 	font-size: 10px;
 	line-height: 1.5;
 }
@@ -56,12 +58,15 @@ body {
 	color: var(--text);
 	font-size: 1.8rem;
 	margin: 0 auto;
-	max-width: 70rem;
+	max-width: 80rem;
 	padding: 1rem 2rem;
 }
 a {
 	color: var(--link);
 	text-decoration: none;
+	padding: 1px 5px;
+	margin: 0 -5px;
+	border-radius: 6px;
 }
 a:hover, a:active {
 	text-decoration: underline;
@@ -145,7 +150,7 @@ header {
 	border-bottom: 1px solid var(--accent-2);
 	display: flex;
 	justify-content: space-between;
-	margin: 0 0 4rem 0;
+	margin: 0 0 3rem 0;
 	padding: 2rem 0;
 }
 header a {
@@ -157,6 +162,7 @@ header a:hover, header a:active {
 .site-title {
 	margin: 0;
 	font-size: 1.6rem;
+	min-width: 10rem;
 }
 .site-nav ul, .footer-nav ul {
 	display: flex;
@@ -168,24 +174,38 @@ header a:hover, header a:active {
 	font-size: 1.6rem;
 }
 article {
-	margin: 4rem 0;
+	margin: 3rem 0;
 }
 article {
     border-bottom: 1px solid var(--accent-2);
-    margin-bottom: 3rem;
-    padding-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
 }
-article:last-of-type, .single article {
+main.archive article {
+	padding-bottom: 3.5rem;
+}
+main.archive p > img {
+	display: none;
+}
+main.archive article span p:last-of-type {
+	margin-bottom: 0;
+}
+article:last-of-type,
+main.archive article:last-of-type, 
+single article {
 	margin-bottom: 0;
 	border-bottom: none;
-	padding-bottom: 0;
+	padding-bottom: 2rem;
 }
 article h2, article h3 {
 	margin-top: 4rem;
 }
+.page-title {
+	margin-top: 0;
+}
 .post-title {
 	font-size: 2.4rem;
 	margin-bottom: -15px;
+	margin-top: 0;
 }
 .post-title a {
 	color: var(--text);
@@ -228,8 +248,8 @@ article img {
 	border: none;
 }
 .main-nav {
-	margin: 4rem 0 0 0;
-	padding-top: 3rem;
+	margin: 0;
+	padding-top: 2rem;
 	border-top: 1px solid var(--accent-2);
 }
 .main-nav ul {
@@ -249,7 +269,7 @@ footer {
 	border-top: 1px solid var(--accent-2);
 	color: var(--accent-3);
 	font-size: 1.6rem;
-	margin: 3rem 0 0 0;
+	margin: 2.1rem 0 0 0;
 	padding: 3rem 0;
 	text-align: center;
 }

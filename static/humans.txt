@@ -4,6 +4,7 @@ Name: Jim Mitchell
 Web: https://jimmitchell.xyz
 Contact: hello [at] jim mitchell dot xyz
 Micro.blog: @jimmitchell
+Mastodon: mastodon.social/@jimmitchell
 From: Huntington Beach, CA, USA
 
 /* SITE */

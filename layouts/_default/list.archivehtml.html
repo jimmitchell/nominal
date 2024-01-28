@@ -2,15 +2,15 @@
 {{ if .Title }}
 <h2 class="page-title">{{ .Title }}</h2>
 {{ end }}
-<main>
+<main class="archive">
 	{{ $list := (where .Site.Pages "Type" "post") }}
 	{{ range $list }}
 	<article>
 		<a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }} →</a></br>
 		{{ if .Title }}
-		<span><b>{{ .Title }}</b></span>
+		<b>{{ .Title }}</b>
 		{{ end }}
-		<span>{{ .Summary | safeHTML | truncate 150  }}</span>
+		{{ .Summary | safeHTML | truncate 150  }}
     </article>
 	{{ end }}
 </main>
