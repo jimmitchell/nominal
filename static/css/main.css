@@ -183,6 +183,9 @@ main.archive article {
 main.archive p > img {
 	display: none;
 }
+main.archive p {
+	display: inline;
+}
 main.archive article span p:last-of-type {
 	margin-bottom: 0;
 }
