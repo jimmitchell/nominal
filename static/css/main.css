@@ -233,7 +233,7 @@ article img {
 .reply-buttons {
 	list-style-type: none;
 	padding: 0;
-	margin: 3rem 0 4.5rem 0;
+	margin: 0 0 4.5rem 0;
 }
 .reply-buttons li {
 	display: inline;
