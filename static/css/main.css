@@ -64,9 +64,6 @@ body {
 a {
 	color: var(--link);
 	text-decoration: none;
-	padding: 1px 5px;
-	margin: 0 -5px;
-	border-radius: 6px;
 }
 a:hover, a:active {
 	text-decoration: underline;
