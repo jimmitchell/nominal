@@ -337,7 +337,7 @@ footer p {
     gap: 1px;
 }
 .photos-grid--style-masonry .photos-grid__item img {
-    margin-bottom: 10px;
+    margin-bottom: 0;
     border-radius: 6px;
 }
 .photos-grid--style-masonry .photos-grid__item img:hover {
