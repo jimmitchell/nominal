@@ -225,9 +225,10 @@ article h2, article h3 {
     color: var(--link);
 }
 .post-date {
-    font-size: 1.6rem;
     color: var(--accent-3);
     font-family: var(--serif-font);
+    font-size: 1.6rem;
+    font-style: italic;
 }
 article img {
     width: calc(100% + 80px);
