@@ -1,9 +1,19 @@
-{{ define "main" }}
-    <main>
-        <article>
-            <h1 class="post-title">Uh, That's a 404 Error</h1>
-            <p>Sorry friend. That link returned a 404 (page not found) error. I don't know why, but since you found it, at least I'll know about it now and can maybe fix it.</p>
-            <p>Thanks for visiting!</p>
-        </article>
-    </main>
-{{ end }}
+<!DOCTYPE html>
+<html lang="en">
+    {{ partial "head.html" . }}
+    <body>
+        {{ partial "header.html" . }}
+        <main>
+            <article>
+                <h1 class="post-title">Uh, That's a 404 Error</h1>
+                <p>Sorry friend. That link returned a 404 (page not found) error. I don't know why, but since you found it, at least I'll know about it now and can maybe fix it.</p>
+                <p>Thanks for visiting!</p>
+            </article>
+        </main>
+        {{ partial "footer.html" . }}
+        {{ range .Site.Params.plugins_js }}
+        <script src="{{ . }}"></script>
+        {{ end }}
+        <script defer="defer" type="text/javascript" src="{{ "js/external-links.min.js" | relURL }}"></script>
+    </body>
+</html>
