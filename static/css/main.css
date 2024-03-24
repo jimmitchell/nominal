@@ -8,6 +8,8 @@
 	--sans-serif-font: -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--serif-font: -apple-system-ui-serif, ui-serif, 'Georgia', serif;
 	--mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	--font-weight-normal: 400;
+	--font-weight-bold: 600;
 }
 @media (prefers-color-scheme: dark) {
 	:root {
@@ -18,7 +20,6 @@
 		--accent-2: #4c4c4c;
 		--accent-3: #d9d9d9;
 	}
-	.microblog_post {border-color: var(--accent-2) !important;}
 	.footnote-button {
 		background: hsla(0,0%,45%,.5) !important;
 	}
@@ -29,6 +30,8 @@
 		color: #f8f8f8 !important;
 	}
 }
+
+/* === css reset === */
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -44,14 +47,16 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.3;
-	font-weight: 600;
+	font-weight: var(--font-weight-bold);
 }
 b, strong {
-	font-weight: 600;
+	font-weight: var(--font-weight-bold);
 }
 #root, #__next {
     isolation: isolate;
 }
+
+/* === start main styles === */
 html {
 	font-size: 10px;
 	line-height: 1.5;
@@ -65,13 +70,19 @@ body {
 	max-width: 74rem;
 	padding: 1rem 2rem;
 	font-stretch: normal;
+	font-weight: var(--font-weight-normal);
 	font-variant-ligatures: none!important;
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
 	text-rendering: geometricPrecision;
-	/* font-smoothing: antialiased; */
-	-webkit-font-smoothing: auto;	/*https://tailwindcss.com/docs/font-smoothing*/
+	-webkit-font-smoothing: auto;
 	-moz-osx-font-smoothing: auto;
+	-moz-font-feature-settings:    "kern" 1; 
+	-ms-font-feature-settings:     "kern" 1; 
+	-o-font-feature-settings:      "kern" 1; 
+	-webkit-font-feature-settings: "kern" 1; 
+	font-feature-settings:         "kern" 1;
+	font-kerning: normal;
 }
 a {
 	color: var(--link);
@@ -436,10 +447,10 @@ a.tinylytics_webring {
 	margin-bottom: 1rem;
 }
 .microblog_user {
-	font-weight: 600;
+	font-weight: var(--font-weight-bold);
 }
 .microblog_fullname {
-	font-weight: 600;
+	font-weight: var(--font-weight-bold);
 	font-size: 1.5rem;
 	margin-left: 6px;
 	display: inline-block;
