@@ -30,6 +30,7 @@
         color: #f8f8f8;
     }
 }
+
 /* === css reset === */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -51,6 +52,7 @@ h1, h2, h3, h4, h5, h6, b, strong {
 #root, #__next {
     isolation: isolate;
 }
+
 /* === start main styles === */
 html {
     font-size: 10px;
