@@ -233,7 +233,7 @@ article img {
     height: auto;
     border-radius: 6px;
     max-width: calc(100% + 80px);
-    margin: 3rem calc(-4rem);
+    margin: 2rem calc(-4rem);
 }
 .post-tags {
     list-style: none;
@@ -455,6 +455,6 @@ a.tinylytics_webring {
 	font-family: var(--serif-font);
 	font-size: 1.4rem;
 	font-style: italic;
-	margin-top: -2rem;
+	margin-top: -1rem;
 	text-align: center;
 }
