@@ -6,11 +6,11 @@
 	{{ $list := (where .Site.Pages "Type" "post") }}
 	{{ range $list }}
 	<article>
-		<a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }} →</a></br>
+		<a href="{{ .Permalink }}" class="post-date">{{ .Date.Format "Monday, January 2, 2006" }} →</a></br>
 		{{ if .Title }}
 		<b>{{ .Title }}: </b>
 		{{ end }}
-		{{ .Summary | safeHTML | truncate 150  }}
+		{{ .Summary | safeHTML | truncate 200  }}
     </article>
 	{{ end }}
 </main>
