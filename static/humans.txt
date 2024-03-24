@@ -1,10 +1,10 @@
 /* DESIGNER */
 
 Name: Jim Mitchell
-Web: https://jimmitchell.xyz
-Contact: hello [at] jim mitchell dot xyz
+Web: https://jimmitchell.dev
+Contact: hello [at] jim mitchell dot dev
 Micro.blog: @jimmitchell
-Mastodon: mastodon.social/@jimmitchell
+Mastodon: social.lol/@jim
 From: Huntington Beach, CA, USA
 
 /* SITE */

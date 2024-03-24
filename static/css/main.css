@@ -1,19 +1,19 @@
 :root {
-	-webkit-font-smoothing: antialiased;
 	--background: #fff;
-	--text: #262626;
-	--link: #e06050;
-	--link-hover-bg: #f5e8e3;
-	--accent-1: #f8f8f8;
-	--accent-2: #e3e3e3;
-	--accent-3: #666;
+	--text: #3b4143;
+	--link: #0093d8;
+	--accent-1: #f2f2f2;
+	--accent-2: #dfe0e0;
+	--accent-3: #626768;
+	--sans-serif-font: -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	--serif-font: -apple-system-ui-serif, ui-serif, 'Georgia', serif;
+	--mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 }
 @media (prefers-color-scheme: dark) {
 	:root {
 		--background: #191919;
 		--text: #f8f8f8;
-		--link: #e06050;
-		--link-hover-bg: #382320;
+		--link: #14b4e3;
 		--accent-1: #2c2c2c;
 		--accent-2: #4c4c4c;
 		--accent-3: #d9d9d9;
@@ -44,22 +44,34 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.3;
+	font-weight: 600;
+}
+b, strong {
+	font-weight: 600;
 }
 #root, #__next {
     isolation: isolate;
 }
 html {
-	font-family: "Avenir Next", Avenir, system-ui, sans-serif;
 	font-size: 10px;
 	line-height: 1.5;
 }
 body {
 	background: var(--background);
 	color: var(--text);
+	font-family: var(--sans-serif-font);
 	font-size: 1.8rem;
 	margin: 0 auto;
-	max-width: 80rem;
+	max-width: 74rem;
 	padding: 1rem 2rem;
+	font-stretch: normal;
+	font-variant-ligatures: none!important;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+	text-rendering: geometricPrecision;
+	/* font-smoothing: antialiased; */
+	-webkit-font-smoothing: auto;	/*https://tailwindcss.com/docs/font-smoothing*/
+	-moz-osx-font-smoothing: auto;
 }
 a {
 	color: var(--link);
@@ -77,6 +89,7 @@ hr {
 blockquote {
 	border-left: 1px solid var(--accent-3);
 	color: var(--accent-3);
+	font-family: var(--serif-font);
 	margin: 2rem 0;
 	padding: 0 2rem;
 	font-style: italic;
@@ -94,7 +107,7 @@ th {
 	background: var(--accent-1);
 }
 code, kbd, pre, tt {
-    font-family: Consolas, Menlo, Courier, monospace;
+    font-family: var(--mono-space-font);
     font-size: 1.5rem;
 }
 pre {
@@ -150,6 +163,12 @@ header {
 	margin: 0 0 3rem 0;
 	padding: 2rem 0;
 }
+header .profile-photo {
+	width: 32px;
+	height: auto;
+	border-radius: 6px;
+	margin-right: 1rem;
+}
 header a {
 	color: var(--accent-3);
 }
@@ -160,22 +179,25 @@ header a:hover, header a:active {
 	margin: 0;
 	font-size: 1.6rem;
 	min-width: 10rem;
+	flex-grow: 1;
 }
 .site-nav ul, .footer-nav ul {
 	display: flex;
 	list-style: none;
 	margin: 0;
+	align-items: right;
+	flex-grow: 4;
 }
 .site-nav li {
 	margin-left: 1.2rem;
 	font-size: 1.6rem;
+	justify-content: flex-end;
 }
 article {
 	margin: 3rem 0;
-}
-article {
-    border-bottom: 1px solid var(--accent-2);
+    /*border-bottom: 1px solid var(--accent-2);*/
     padding-bottom: 1.5rem;
+	line-height: 1.6;
 }
 main.archive article {
 	padding-bottom: 3.5rem;
@@ -244,9 +266,6 @@ article img {
 	line-height: 1.6rem;
 	white-space: nowrap;
 }
-.reply-buttons li *, .reply-buttons li *:hover {
-	border: none;
-}
 .main-nav {
 	margin: 0;
 	padding-top: 2rem;
@@ -275,4 +294,183 @@ footer {
 }
 footer p {
 	margin: 0;
+}
+article img {
+	width: calc(100% + 80px);	
+	max-width: calc(100% + 80px);
+	margin-left: calc(-40px);
+	margin-right: calc(-40px);
+}
+
+@media only screen and (max-width: 740px) {
+	article img {
+		width: 100%;
+		max-width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	header {
+		display: block;
+	}
+	header .profile-photo {
+		width: 50px;
+		height: auto;
+		margin: 0 auto 15px;
+	}
+	.site-title {
+		text-align: center;
+		margin: 1rem auto;
+		width: 100%;
+		font-size: 2rem;
+	}
+	.site-nav ul {
+		display: block;
+		text-align: center;
+		padding: 0;
+		width: 100%;
+	}
+	.site-nav li {
+		display: inline-block;
+		margin: 0 0.3rem;
+	}
+}
+
+/* from custom css page */
+
+.reply-buttons a, .reply-buttons button {
+    transition: all 0.2s ease-in-out;
+}
+.footnote-button {
+	font-size:1.4rem !important;
+}
+.info {
+	background-color: #e7f3fe;
+	border-left: 5px solid #2196f3;
+	color: #111;
+	padding: 16px 24px;
+}
+.photos-grid-container {grid-row-gap: 1px !important;}
+.photos-grid__column {gap: 1px !important;}
+.photos-grid--style-masonry .photos-grid__item img {
+	margin-bottom: 10px;
+	border-radius: 6px;
+}
+.photos-grid--style-masonry .photos-grid__item img:hover {
+	opacity: 0.8;
+}
+.tinylytics_kudos,
+.tiny_hits,
+a.conversation-on-mb,
+a.reply-on-mastodon,
+a.reply-by-email {
+	text-decoration: none;
+	color: var(--accent-3);
+	border: 1px solid var(--accent-2);
+	background-color: var(--accent-1);
+	font-size: 1.4rem;
+	border-radius: 6px;
+	padding: 2px 8px;
+    display: inline-block;
+	margin: 2px 0;
+	line-height: 1.6;
+}
+.tinylytics_kudos:hover,
+a.conversation-on-mb:hover,
+a.reply-on-mastodon:hover,
+.tinylytics_kudos:active,
+a.reply-by-email:hover,
+a.reply-by-email:active,
+a.conversation-on-mb:active,
+a.reply-on-mastodon:active,
+.did_select {
+	border: 1px solid var(--text);
+	background: var(--text);
+	color: var(--background);
+}
+.tiny_uptime,
+.tiny_counter {
+	display:inline-block;
+}
+.tiny_webring {
+	display:block;
+}
+.tiny_uptime::before {
+	content: " · ";
+}
+.tiny_countries {
+	display: block;
+	font-size:2rem;
+	letter-spacing: 2px;
+	line-height:1;
+	margin:15px auto 0 auto;
+	max-width:50rem;
+	word-break: break-word;
+}
+a.tinylytics_webring {
+	display:inline;
+	line-height:30px;
+}
+.tinylytics_webring_avatar {
+	border-radius: 6px;
+	width: 24px;
+	height: auto;
+	vertical-align: middle;
+	margin-right: 6px;
+	background: #fff;
+}
+.microblog_conversation {
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+.microblog_post {
+	margin-bottom: 1rem;
+	padding: 2.5rem 2.5rem 2.3rem 2.5rem;
+	border: 1px solid var(--accent-2);
+	border-radius: 6px;
+	background: var(--accent-1);
+}
+.microblog_conversation .microblog_post {
+	margin-bottom: 1rem;
+}
+.microblog_user {
+	font-weight: 600;
+}
+.microblog_fullname {
+	font-weight: 600;
+	font-size: 1.5rem;
+	margin-left: 6px;
+	display: inline-block;
+	line-height: 30px;
+}
+.microblog_user img {
+	vertical-align: middle;
+	width: 30px;
+	height: auto;
+	border-radius: 6px;
+	max-width: 30px !important;
+	display: inline-block;
+}
+.microblog_time a,
+.microblog_time a:visited {
+	color: var(--accent-dark2);
+	font-size: 0.9em;
+	text-decoration: none;
+}
+.lightbox-btn {
+	border: none;
+}
+.lightbox-image {
+	border-radius: 6px;
+}
+.img-caption {
+	color: var(--accent-3);
+	display: block;
+	font-family: var(--serif-font);
+	font-size: 1.4rem;
+	font-style: italic;
+	margin-top: -15px;
+	text-align: center;
 }

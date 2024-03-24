@@ -8,7 +8,7 @@
 	<article>
 		<a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }} →</a></br>
 		{{ if .Title }}
-		<b>{{ .Title }}</b>
+		<b>{{ .Title }}: </b>
 		{{ end }}
 		{{ .Summary | safeHTML | truncate 150  }}
     </article>
