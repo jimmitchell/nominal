@@ -285,7 +285,7 @@ article img {
     padding: 0;
 }
 footer {
-    border-top: 1px solid var(--accent-2);
+    /* border-top: 1px solid var(--accent-2); */
     color: var(--accent-3);
     font-size: 1.6rem;
     margin: 2.1rem 0 0 0;
