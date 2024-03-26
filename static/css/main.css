@@ -186,6 +186,10 @@ header a:hover, header a:active {
     min-width: 10rem;
     flex-grow: 2;
 }
+.site-title a:hover,
+.site-title a:active {
+    text-decoration: none;
+}
 .site-nav ul, .footer-nav ul {
     display: flex;
     list-style: none;
