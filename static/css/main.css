@@ -463,6 +463,7 @@ a.tinylytics_webring {
 }
 .lightbox-image {
 	border-radius: 6px;
+    max-width: 140rem;
 }
 .img-caption {
 	color: var(--accent-3);
