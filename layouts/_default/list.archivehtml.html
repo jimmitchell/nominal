@@ -1,20 +1,13 @@
 {{ define "main" }}
 <main class="archive">
-	{{ if .Title }}
 	<h2 class="page-title">{{ .Title }}</h2>
-	{{ end }}
 	{{ $list := (where .Site.Pages "Type" "post") }}
 	{{ range $list }}
 	<article>
 		<p class="post-date">
 			<a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }} →</a><br/>
 		</p>
-		<p>
-			{{ if .Title }}
-			<b>{{ .Title }}: </b>
-			{{ end }}
-			{{ .Summary | safeHTML | truncate 200  }}
-		</p>
+		<p>{{ if .Title }}<b>{{ .Title }}: </b>{{ end }}{{ .Summary | safeHTML | truncate 150  }}</p>
     </article>
 	{{ end }}
 </main>
