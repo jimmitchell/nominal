@@ -1,8 +1,8 @@
 {{ define "main" }}
-{{ if .Title }}
-<h2 class="page-title">{{ .Title }}</h2>
-{{ end }}
 <main class="archive">
+	{{ if .Title }}
+	<h2 class="page-title">{{ .Title }}</h2>
+	{{ end }}
 	{{ $list := (where .Site.Pages "Type" "post") }}
 	{{ range $list }}
 	<article>

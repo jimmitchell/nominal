@@ -1,7 +1,7 @@
 :root {
     --background: #fff;
     --text: #3b4143;
-    --link: #0093d8;
+    --link: #009db6;
     --accent-1: #f8f8f8;
     --accent-2: #dfe0e0;
     --accent-3: #626768;
@@ -63,7 +63,7 @@ body {
     font-family: var(--sans-serif-font);
     font-size: 1.8rem;
     margin: 0 auto;
-    max-width: 74rem;
+    max-width: 72rem;
     padding: 1rem 2rem;
     -moz-font-feature-settings:    "kern" 1; 
     -ms-font-feature-settings:     "kern" 1; 
@@ -300,7 +300,7 @@ footer p {
     margin: 0;
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 760px) {
     article img {
         width: 100%;
         max-width: 100%;
