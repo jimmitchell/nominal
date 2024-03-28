@@ -5,6 +5,9 @@
     <h2 class="page-title">{{ .Title }}</h2>
     {{ end }}
     {{ .Content }}
+    <p class="post-date" style="font-family:var(--serif-font);margin-top:5rem">
+      {{ .Lastmod | time.Format "Monday, January 2, 2006" }}
+    </p>
   </article>
 </main>
 {{ end }}
