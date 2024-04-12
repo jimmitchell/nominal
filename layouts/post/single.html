@@ -6,8 +6,8 @@
 	    <p class="post-date">{{ .Date.Format "Monday, January 2, 2006" }}</p>
 	    {{ .Content }}
 	{{ else }}
+		<p class="post-date" style="margin-bottom:-10px;">{{ .Date.Format "Monday, January 2, 2006" }}</p>
 	    {{ .Content }}
-	    <p class="post-date">{{ .Date.Format "Monday, January 2, 2006" }}</p>
     {{ end }}
     </article>
     {{ if or (templates.Exists "partials/reply-by-email.html") (templates.Exists "partials/conversation-link.html") (templates.Exists "partials/tinylytics.html") }}

@@ -1,6 +1,6 @@
 {{ define "main" }}
     <main>
-        {{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" | default 20) }}
+        {{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" | default 25) }}
         {{ range $paginator.Pages  }}
         <article>
             {{ if .Title }}
@@ -11,8 +11,8 @@
       		 <p><a href="{{ .RelPermalink }}">Continue reading →</a></p>
     	    {{ end }}
             {{ else }}
+			<p class="post-date" style="margin-bottom:-10px;"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }} →</a></p>
             {{ .Content }}
-			<p class="post-date"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }} →</a></p>
             {{ end }}
         </article>
         {{ end }}

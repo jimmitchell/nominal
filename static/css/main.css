@@ -15,7 +15,7 @@
     :root {
         --background: #191919;
         --text: #f8f8f8;
-        --link: #14b4e3;
+        --link: #2196f3;
         --accent-1: #2c2c2c;
         --accent-2: #4c4c4c;
         --accent-3: #d9d9d9;
@@ -44,7 +44,6 @@ input, button, textarea, select {
 }
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
-    line-height: 1.5;
 }
 h1, h2, h3, h4, h5, h6, b, strong {
     font-weight: var(--font-weight-bold);
@@ -62,6 +61,7 @@ body {
     color: var(--text);
     font-family: var(--sans-serif-font);
     font-size: 1.8rem;
+    line-height: 1.6;
     margin: 0 auto;
     max-width: 72rem;
     padding: 1rem 2rem;
@@ -94,6 +94,7 @@ blockquote {
     margin: 2rem 0;
     padding: 0 2rem;
     font-style: italic;
+	font-size: 1.9rem;
 }
 table {
     border-collapse: collapse;
@@ -204,7 +205,6 @@ header a:hover, header a:active {
 article {
     margin: 3rem 0;
     padding-bottom: 1.5rem;
-    line-height: 1.6;
 }
 main.archive article {
     padding-bottom: 3.5rem;
@@ -273,7 +273,7 @@ article img {
 }
 .main-nav {
     margin: 0;
-    padding-top: 2rem;
+    padding: 2rem 0;
     border-top: 1px solid var(--accent-2);
 }
 .main-nav ul {
@@ -289,7 +289,6 @@ article img {
     padding: 0;
 }
 footer {
-    /* border-top: 1px solid var(--accent-2); */
     color: var(--accent-3);
     font-size: 1.6rem;
     margin: 1rem 0 0 0;
