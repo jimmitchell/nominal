@@ -6,7 +6,7 @@
     width: 50px;
     height: 50px;
     line-height: 50px;
-    background: #3b4143;
+    background: #2196f3;
     color: #f8f8f8;
     text-align: center;
     text-decoration: none;
@@ -19,12 +19,6 @@
     z-index: 9;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-}
-@media (prefers-color-scheme: dark) {
-    .back-to-top {
-        background: #f8f8f8;
-        color: #3b4143;
-    }
 }
 .back-to-top:focus {
     color: #fff;
