@@ -1,4 +1,4 @@
-jQuery(document).ready(function($){
+$(document).ready(function(){
     var btn = $('#backToTop');
     $(window).on('scroll', function() {
         if ($(window).scrollTop() > 300) {
@@ -9,7 +9,7 @@ jQuery(document).ready(function($){
     });
     btn.on('click', function(e) {
         e.preventDefault();
-        jQuery('html, body').animate({
+        $('html, body').animate({
             scrollTop: 0
         }, '300');
     });
