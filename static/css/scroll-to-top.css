@@ -41,7 +41,7 @@
     position: absolute; width: 12px; height: 12px; background-size: contain;
     transform: rotate(-90deg);
     top: 28%;
-    left: 40%;
+    left: 39%;
 }
 .arrow:nth-child(2) {
     top: 40%;
@@ -82,7 +82,10 @@
         bottom: 10px;
     }
     .arrow {
-        top: 27%;
-        left: 37%;
+        top: 25%;
+        left: 36%;
+    }
+    .arrow:nth-child(2) {
+        top: 39%;
     }
 }
