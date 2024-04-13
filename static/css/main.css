@@ -172,7 +172,7 @@ header .profile-photo {
     margin-right: 1rem;
 }
 header a {
-    color: var(--accent-3);
+    color: var(--text);
 }
 header a:hover, header a:active {
     color: var(--link);
@@ -226,10 +226,12 @@ article h2, article h3 {
     margin-top: 4rem;
 }
 .page-title {
+    line-height: 1.2;
     margin-top: 0;
 }
 .post-title {
     font-size: 2.4rem;
+    line-height: 1.2;
     margin-bottom: -15px;
     margin-top: 0;
 }
@@ -250,6 +252,10 @@ article img {
     max-width: calc(100% + 80px);
     margin: 2rem calc(-4rem);
 }
+article ul li,
+article ol li {
+    margin-bottom:5px;
+}
 .post-tags {
     list-style: none;
     margin: 0 0 2rem 0;
@@ -263,7 +269,7 @@ article img {
 .reply-buttons {
     list-style-type: none;
     padding: 0;
-    margin: 0 0 4.5rem 0;
+    margin: 0 0 4rem 0;
 }
 .reply-buttons li {
     display: inline;
@@ -291,8 +297,8 @@ article img {
 footer {
     color: var(--accent-3);
     font-size: 1.6rem;
-    margin: 1rem 0 0 0;
-    padding: 3rem 0;
+    margin: 0;
+    padding: 0 0 3rem 0;
     text-align: center;
 }
 footer p {
@@ -345,6 +351,9 @@ footer p {
     border-left: 5px solid #2196f3;
     color: #111;
     padding: 16px 24px;
+}
+.photos-grid {
+    margin-bottom: 4rem;
 }
 .photos-grid-container {
     grid-row-gap: 1px;
@@ -403,7 +412,7 @@ a.reply-on-mastodon:active,
     font-size: 2rem;
     letter-spacing: 2px;
     line-height: 1;
-    margin: 15px auto 0 auto;
+    margin: 4rem auto 0 auto;
     max-width: 50rem;
     word-break: break-word;
 }
@@ -420,8 +429,7 @@ a.tinylytics_webring {
     background: #fff;
 }
 .microblog_conversation {
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
+    margin:4rem 0;
 }
 .microblog_post {
     margin-bottom: 1rem;
