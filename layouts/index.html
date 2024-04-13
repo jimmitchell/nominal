@@ -26,8 +26,9 @@
                 <li>
                 {{ if $paginator.HasNext }}
                 <a href="{{ $paginator.Next.URL }}">Older →</a>
+                {{ end }}
+                </li>
             </ul>
         </nav>
-        {{ end }}
     </main>
 {{ end }}

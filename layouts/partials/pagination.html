@@ -9,6 +9,7 @@
         <li>
         {{ if $pag.HasNext }}
         <a href="{{ $pag.Next.URL }}">Older →</a>
+        {{ end }}
+        </li>
     </ul>
 </nav>
-{{ end }}
