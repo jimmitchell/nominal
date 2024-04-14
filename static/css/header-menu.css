@@ -47,6 +47,13 @@
 	}
 	.site-nav ul {
 		display: block;
+		position: absolute;
+		top: 4.5rem;
+		left: 0;
+		right: 0;
+		background: var(--background);
+		padding: 2rem;
+		border-bottom: 1px solid var(--accent-2);
 	}
 	.site-nav li {
 		margin-left: 0;
