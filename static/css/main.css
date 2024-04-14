@@ -317,19 +317,19 @@ footer p {
         display: block;
     }
     header .profile-photo {
-        width: 50px;
+        width: 40px;
         height: auto;
         margin: 0 auto 15px;
     }
     .site-title {
         text-align: center;
-        margin: 1rem auto;
+        margin: 0.5rem auto 1.5rem;
         width: 100%;
         font-size: 2rem;
     }
     .site-nav ul {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         text-align: center;
         padding: 0;
         width: 100%;
