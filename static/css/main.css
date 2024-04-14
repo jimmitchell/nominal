@@ -313,7 +313,6 @@ footer p {
         margin-left: 0;
         margin-right: 0;
     }
-    /*
     header {
         display: block;
     }
@@ -339,7 +338,6 @@ footer p {
         display: inline-block;
         margin: 0 .5rem;
     }
-    */
 }
 
 /* === from custom css page - roll into the other styles... === */
