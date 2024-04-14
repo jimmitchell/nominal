@@ -1,0 +1,35 @@
+#header-menu-icon {
+	display: none;
+}
+.open::before,
+.closed::before {
+	color: var(--text);
+	font-size: 1.8rem;
+}
+.closed::before {
+	content: "&#9776;";
+	font-weight: 700;
+}
+.open::before {
+	content: "&times;";
+	font-weight: 700;
+}
+@media only screen and (max-width: 760px) {
+	.header-menu-hidden {
+		display: none;
+	}
+	.header-menu-display {
+		display: block;
+	}
+	#header-menu-icon {
+		cursor: pointer;
+		display: block;
+		padding-right: 20px;
+		padding-top: 0;
+		position: absolute;
+		right: 0;
+		text-align: right;
+		top: 0;
+		width: 15%;
+	}
+}
