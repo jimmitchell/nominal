@@ -7,11 +7,11 @@
 	font-size: 1.8rem;
 }
 .closed::before {
-	content: "&#9776;";
+	content: "\9776;";
 	font-weight: 700;
 }
 .open::before {
-	content: "&times;";
+	content: "\00D7;";
 	font-weight: 700;
 }
 @media only screen and (max-width: 760px) {
