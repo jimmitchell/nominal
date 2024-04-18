@@ -5,7 +5,7 @@
     --accent-1: #f8f8f8;
     --accent-2: #dfe0e0;
     --accent-3: #626768;
-    --sans-serif-font: -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --sans-serif-font: 'Avenir Next', Avenir, -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --serif-font: -apple-system-ui-serif, ui-serif, 'Georgia', serif;
     --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     --font-weight-normal: 400;
@@ -243,7 +243,7 @@ article h2, article h3 {
 }
 .post-date {
     color: var(--accent-3);
-    font-family: var(--serif-font);
+    /* font-family: var(--serif-font); */
     font-size: 1.6rem;
 }
 article img {
@@ -476,7 +476,7 @@ a.tinylytics_webring {
 .img-caption {
 	color: var(--accent-3);
 	display: block;
-	font-family: var(--serif-font);
+	/* font-family: var(--serif-font); */
 	font-size: 1.4rem;
 	font-style: italic;
 	margin-top: -1rem;
