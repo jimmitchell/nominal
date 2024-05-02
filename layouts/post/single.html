@@ -36,13 +36,13 @@
     <nav class="main-nav">
         <ul>
             <li>
-            {{ if .NextInSection }}
-            <a href="{{ .NextInSection.Permalink }}">← Newer</a>
+            {{ if .PrevInSection }}
+            <a href="{{ .PrevInSection.Permalink }}">← Older</a>
             {{ end }}
             </li>
             <li>
-            {{ if .PrevInSection }}
-            <a href="{{ .PrevInSection.Permalink }}">Older →</a>
+            {{ if .NextInSection }}
+            <a href="{{ .NextInSection.Permalink }}">Newer →</a>
             {{ end }}
             </li>
         </ul>

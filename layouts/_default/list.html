@@ -15,15 +15,16 @@
         <nav class="main-nav">
             <ul>
                 <li>
-                {{ if $paginator.HasPrev }}
-                <a href="{{ $paginator.Prev.URL }}">← Newer</a>
+                {{ if $paginator.HasNext }}
+                <a href="{{ $paginator.Next.URL }}">← Older</a>
                 {{ end }}
                 </li>
                 <li>
-                {{ if $paginator.HasNext }}
-                <a href="{{ $paginator.Next.URL }}">Older →</a>
+                {{ if $paginator.HasPrev }}
+                <a href="{{ $paginator.Prev.URL }}">Newer →</a>
                 {{ end }}
                 </li>
+                
             </ul>
         </nav>
     </main>
