@@ -470,6 +470,9 @@ a.tinylytics_webring {
     font-size: 0.9em;
     text-decoration: none;
 }
+.microblog_text {
+    font-family: var(--serif-font);
+}
 .lightbox-btn {
     border: none;
 }
