@@ -163,8 +163,8 @@ header {
     border-bottom: 1px solid var(--accent-2);
     display: flex;
     justify-content: space-between;
-    margin: 0 0 3rem 0;
-    padding: 2rem 0;
+    margin: 0 0 4rem 0;
+    padding: 1rem 0;
 }
 header .profile-photo {
     width: 32px;
@@ -307,7 +307,6 @@ article ol li {
 footer {
     color: var(--accent-3);
     font-size: 1.6rem;
-    margin: 0;
     padding: 0 0 3rem 0;
     text-align: center;
 }
