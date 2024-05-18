@@ -72,8 +72,8 @@ body {
     -webkit-font-feature-settings: "kern" 1; 
     font-feature-settings:         "kern" 1;
     font-kerning: normal;
-    /* -webkit-font-smoothing: antialiased; */
-    /* -moz-osx-font-smoothing: grayscale; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 a {
     color: var(--link);
