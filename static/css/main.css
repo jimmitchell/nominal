@@ -64,7 +64,7 @@ body {
     font-size: 1.8rem;
     line-height: 1.5;
     margin: 0 auto;
-    max-width: 72rem;
+    max-width: 110rem;
     padding: 1rem 2rem;
     -moz-font-feature-settings:    "kern" 1; 
     -ms-font-feature-settings:     "kern" 1; 
@@ -203,6 +203,11 @@ header a:hover, header a:active {
     font-size: 1.6rem;
     justify-content: flex-end;
 }
+main,
+footer {
+    margin: 0 auto;
+    max-width: 72rem;
+}
 article {
     /* font-family: var(--serif-font); */
     margin: 3rem 0;
@@ -309,7 +314,7 @@ footer {
 footer p {
     margin: 0;
 }
-
+/*
 @media only screen and (max-width: 760px) {
     article img {
         width: 100%;
@@ -343,7 +348,7 @@ footer p {
         margin: 0 .5rem;
     }
 }
-
+*/
 /* === from custom css page - roll into the other styles... === */
 .reply-buttons a, .reply-buttons button {
     transition: all 0.2s ease-in-out;
@@ -434,7 +439,7 @@ a.tinylytics_webring {
     background: #fff;
 }
 .microblog_conversation {
-    margin:4rem 0;
+    margin: 4rem 0;
 }
 .microblog_post {
     margin-bottom: 1rem;
@@ -469,9 +474,6 @@ a.tinylytics_webring {
     color: var(--accent-dark2);
     font-size: 0.9em;
     text-decoration: none;
-}
-.microblog_text {
-    /* font-family: var(--serif-font); */
 }
 .lightbox-btn {
     border: none;
