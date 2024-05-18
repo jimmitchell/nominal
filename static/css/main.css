@@ -490,8 +490,12 @@ a.tinylytics_webring {
 	text-align: center;
 }
 
+.microblog_reply_form {
+    margin-top: 30px;
+}
 .microblog_reply_signin {
     font-size: 1.6rem;
+    margin-bottom: -10px;
 }
 .microblog_reply_textarea textarea {
     border-color: var(--accent-3);
