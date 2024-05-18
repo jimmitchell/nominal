@@ -315,7 +315,7 @@ footer p {
     margin: 0;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 570px) {
     header {
         display: block;
     }
