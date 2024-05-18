@@ -204,7 +204,8 @@ header a:hover, header a:active {
     justify-content: flex-end;
 }
 main,
-footer {
+footer,
+.photos-grid {
     margin: 0 auto;
     max-width: 72rem;
 }
