@@ -24,9 +24,6 @@
         {{ if templates.Exists "partials/reply-by-email.html" }}
         <li>{{ partial "reply-by-email.html" . }}</li>
         {{ end }}
-		{{ if and (templates.Exists "partials/tinylytics.html") (.Site.Params.show_hits) (ne (.Site.Params.site_id | default "") "") }}
-        <li><span class="tiny_hits">👀 <span class="tinylytics_hits" data-path="{{ .Page.RelPermalink }}"></span></span></li>
-        {{ end }}
     </ul>
     {{ end }}
     {{ if .Site.Params.include_conversation }}
