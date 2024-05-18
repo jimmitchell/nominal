@@ -314,19 +314,13 @@ footer {
 footer p {
     margin: 0;
 }
-/*
+
 @media only screen and (max-width: 760px) {
-    article img {
-        width: 100%;
-        max-width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-    }
     header {
         display: block;
     }
     header .profile-photo {
-        width: 40px;
+        width: 32px;
         height: auto;
         margin: 0 auto 10px;
     }
@@ -340,7 +334,7 @@ footer p {
         display: flex;
         justify-content: space-between;
         text-align: center;
-        padding: 0;
+        padding: 0 20px;
         width: 100%;
     }
     .site-nav li {
@@ -348,7 +342,7 @@ footer p {
         margin: 0 .5rem;
     }
 }
-*/
+
 /* === from custom css page - roll into the other styles... === */
 .reply-buttons a, .reply-buttons button {
     transition: all 0.2s ease-in-out;
