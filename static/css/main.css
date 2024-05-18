@@ -494,7 +494,7 @@ a.tinylytics_webring {
     margin-bottom: -10px;
 }
 .microblog_reply_textarea textarea {
-    border-color: var(--accent-3);
+    border: 1px solid var(--accent-3);
     width: 100%;
     border-radius: 6px;
     padding: 8px;
