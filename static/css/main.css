@@ -91,7 +91,7 @@ hr {
 blockquote {
     border-left: 1px solid var(--accent-3);
     color: var(--accent-3);
-    font-family: var(--serif-font);
+    /* font-family: var(--serif-font); */
     margin: 2rem 0;
     padding: 0 2rem;
     font-style: italic;
@@ -204,7 +204,7 @@ header a:hover, header a:active {
     justify-content: flex-end;
 }
 article {
-    font-family: var(--serif-font);
+    /* font-family: var(--serif-font); */
     margin: 3rem 0;
     padding-bottom: 1.5rem;
 }
@@ -471,7 +471,7 @@ a.tinylytics_webring {
     text-decoration: none;
 }
 .microblog_text {
-    font-family: var(--serif-font);
+    /* font-family: var(--serif-font); */
 }
 .lightbox-btn {
     border: none;
