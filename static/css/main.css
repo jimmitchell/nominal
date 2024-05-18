@@ -207,7 +207,7 @@ main,
 footer,
 .photos-grid {
     margin: 0 auto;
-    max-width: 72rem;
+    max-width: 70rem;
 }
 article {
     /* font-family: var(--serif-font); */
