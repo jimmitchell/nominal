@@ -185,7 +185,7 @@ header a:hover, header a:active {
 .site-title {
     margin: 0;
     font-size: 1.6rem;
-    min-width: 10rem;
+    /* min-width: 10rem; */
     flex-grow: 2;
 }
 .site-title a:hover,
