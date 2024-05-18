@@ -169,7 +169,7 @@ header {
 header .profile-photo {
     width: 32px;
     height: auto;
-    border-radius: 6px;
+    border-radius: 50%;
     margin-right: 1rem;
 }
 header a {
@@ -257,7 +257,7 @@ article h2, article h3 {
 article img {
     width: calc(100% + 80px);
     height: auto;
-    border-radius: 6px;
+    /* border-radius: 6px; */
     /* max-width: calc(100% + 80px);
     margin: 2rem calc(-4rem); */
     max-width: 100%;
@@ -373,7 +373,7 @@ footer p {
 }
 .photos-grid--style-masonry .photos-grid__item img {
     margin-bottom: 0;
-    border-radius: 6px;
+    /* border-radius: 6px; */
 }
 .photos-grid--style-masonry .photos-grid__item img:hover {
     opacity: 0.8;
@@ -431,7 +431,7 @@ a.tinylytics_webring {
     line-height: 30px;
 }
 .tinylytics_webring_avatar {
-    border-radius: 6px;
+    border-radius: 50%;
     width: 24px;
     height: auto;
     vertical-align: middle;
@@ -465,7 +465,7 @@ a.tinylytics_webring {
     vertical-align: middle;
     width: 30px;
     height: auto;
-    border-radius: 6px;
+    border-radius: 50%;
     max-width: 30px !important;
     display: inline-block;
 }
