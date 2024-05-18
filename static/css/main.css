@@ -5,7 +5,7 @@
     --accent-1: #f8f8f8;
     --accent-2: #dfe0e0;
     --accent-3: #626768;
-    --sans-serif-font: -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --sans-serif-font: 'Avenir Next', Avenir, -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --serif-font: -apple-system-ui-serif, ui-serif, 'Georgia', serif;
     --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     --font-weight-normal: 400;
@@ -62,7 +62,7 @@ body {
     color: var(--text);
     font-family: var(--sans-serif-font);
     font-size: 1.8rem;
-    line-height: 1.6;
+    line-height: 1.5;
     margin: 0 auto;
     max-width: 72rem;
     padding: 1rem 2rem;
@@ -72,8 +72,8 @@ body {
     -webkit-font-feature-settings: "kern" 1; 
     font-feature-settings:         "kern" 1;
     font-kerning: normal;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    /* -webkit-font-smoothing: antialiased; */
+    /* -moz-osx-font-smoothing: grayscale; */
 }
 a {
     color: var(--link);
@@ -488,4 +488,23 @@ a.tinylytics_webring {
 	font-style: italic;
 	margin-top: -1rem;
 	text-align: center;
+}
+
+.microblog_reply_signin {
+    font-size: 1.6rem;
+}
+.microblog_reply_textarea textarea {
+    border-color: var(--accent-3);
+    width: 100%;
+    border-radius: 6px;
+    padding: 8px;
+}
+.microblog_reply_button input:disabled,
+.microblog_reply_button input[disabled] {
+    display: none;
+}
+.microblog_reply_button {
+    text-align: right;
+    font-size: 1.6rem;
+    margin-top: -20px;
 }
