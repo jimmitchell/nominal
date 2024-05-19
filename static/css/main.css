@@ -498,6 +498,10 @@ a.tinylytics_webring {
     border-radius: 6px;
     padding: 8px;
 }
+.microblog_reply_textarea textarea:disabled,
+.microblog_reply_textarea textarea:[disabled] {
+    border-color: var(--accent-2);
+}
 .microblog_reply_button input:disabled,
 .microblog_reply_button input[disabled] {
     display: none;
