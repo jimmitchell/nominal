@@ -499,7 +499,7 @@ a.tinylytics_webring {
     padding: 8px;
 }
 .microblog_reply_textarea textarea:disabled,
-.microblog_reply_textarea textarea:[disabled] {
+.microblog_reply_textarea textarea[disabled] {
     border-color: var(--accent-2);
 }
 .microblog_reply_button input:disabled,
