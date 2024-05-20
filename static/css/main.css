@@ -185,7 +185,7 @@ header a:hover, header a:active {
 }
 .site-title {
     margin: 0;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     flex-grow: 2;
 }
 .site-title a:hover,
@@ -200,7 +200,7 @@ header a:hover, header a:active {
 }
 .site-nav li {
     margin-left: 2rem;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     justify-content: flex-end;
 }
 main,
@@ -250,7 +250,7 @@ article h2, article h3 {
 }
 .post-date {
     color: var(--accent-3);
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
 }
 article img {
