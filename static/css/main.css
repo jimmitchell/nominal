@@ -334,7 +334,7 @@ footer p {
         display: flex;
         justify-content: space-between;
         text-align: center;
-        padding: 0 3px;
+        padding: 0 10px;
         width: 100%;
     }
     .site-nav li {
