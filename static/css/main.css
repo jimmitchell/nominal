@@ -5,7 +5,7 @@
     --accent-1: #f8f8f8;
     --accent-2: #dfe0e0;
     --accent-3: #626768;
-    --sans-serif-font: 'Proxima Nova', -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --sans-serif-font: 'Inter', -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --serif-font: -apple-system-ui-serif, ui-serif, 'Georgia', serif;
     --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     --font-weight-normal: 400;
@@ -62,7 +62,7 @@ body {
     color: var(--text);
     font-family: var(--sans-serif-font);
     font-size: 1.8rem;
-    line-height: 1.5;
+    line-height: 1.6;
     margin: 0 auto;
     max-width: 100rem;
     padding: 1rem 2rem;
@@ -206,7 +206,7 @@ main,
 footer,
 .photos-grid {
     margin: 0 auto;
-    max-width: 64rem;
+    max-width: 74rem;
 }
 article {
     margin: 3rem 0;
@@ -320,7 +320,7 @@ footer p {
         display: block;
     }
     header .profile-photo {
-        width: 42px;
+        width: 48px;
         height: auto;
         margin: 0 auto 10px;
     }
@@ -328,7 +328,7 @@ footer p {
         text-align: center;
         margin: 0.5rem auto 1.5rem;
         width: 100%;
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
     .site-nav ul {
         display: flex;
@@ -336,6 +336,7 @@ footer p {
         text-align: center;
         padding: 0 20px;
         width: 100%;
+        font-size: 1.8rem;
     }
     .site-nav li {
         display: inline-block;
