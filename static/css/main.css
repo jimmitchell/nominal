@@ -164,7 +164,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin: 2rem 0 4rem 0;
-    padding: 1.25rem 5rem;
+    padding: 1.25rem 4rem;
 }
 header .profile-photo {
     width: 32px;
