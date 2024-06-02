@@ -5,7 +5,7 @@
     --accent-1: #f8f8f8;
     --accent-2: #dfe0e0;
     --accent-3: #626768;
-    --sans-serif-font: 'Inter', -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --sans-serif-font: -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --serif-font: -apple-system-ui-serif, ui-serif, 'Georgia', serif;
     --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     --font-weight-normal: 400;
@@ -91,7 +91,7 @@ hr {
 blockquote {
     border-left: 1px solid var(--accent-3);
     color: var(--accent-3);
-    /* font-family: var(--serif-font); */
+    font-family: var(--serif-font);
     margin: 2rem 0;
     padding: 0 2rem;
     font-style: italic;
@@ -160,10 +160,10 @@ input[type=email] {
 }
 header {
     align-items: center;
-    border-bottom: 1px solid var(--accent-2);
+    /* border-bottom: 1px solid var(--accent-2); */
     display: flex;
     justify-content: space-between;
-    margin: 0 0 4rem 0;
+    margin: 2rem 0 4rem 0;
     padding: 1.25rem 0;
 }
 header .profile-photo {
@@ -184,7 +184,7 @@ header a:hover, header a:active {
 }
 .site-title {
     margin: 0;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     flex-grow: 2;
 }
 .site-title a:hover,
@@ -199,17 +199,17 @@ header a:hover, header a:active {
 }
 .site-nav li {
     margin-left: 2rem;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     justify-content: flex-end;
 }
 main,
 footer,
 .photos-grid {
     margin: 0 auto;
-    max-width: 70rem;
+    max-width: 64rem;
 }
 article {
-    margin: 3rem 0;
+    margin: 0;
     padding-bottom: 1.5rem;
 }
 main.archive article {
@@ -249,7 +249,7 @@ article h2, article h3 {
 }
 .post-date {
     color: var(--accent-3);
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 article img {
     width: calc(100% + 80px);
@@ -268,7 +268,7 @@ article ol li {
     list-style: none;
     margin: 0 0 2rem 0;
     padding: 0;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 .post-tags li {
     margin-right: 6px;
@@ -288,7 +288,7 @@ article ol li {
 .main-nav {
     margin: 0;
     padding: 2rem 0;
-    border-top: 1px solid var(--accent-2);
+    /* border-top: 1px solid var(--accent-2); */
 }
 .main-nav ul {
     list-style: none;
@@ -304,7 +304,7 @@ article ol li {
 }
 footer {
     color: var(--accent-3);
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     padding: 0 0 3rem 0;
     text-align: center;
 }
@@ -318,6 +318,7 @@ footer p {
     }
     header {
         display: block;
+        margin-top: 1rem;
     }
     header .profile-photo {
         width: 48px;
@@ -328,7 +329,7 @@ footer p {
         text-align: center;
         margin: 0.5rem auto 1.5rem;
         width: 100%;
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
     .site-nav ul {
         display: flex;
@@ -490,7 +491,7 @@ a.tinylytics_webring {
     margin-top: 30px;
 }
 .microblog_reply_signin {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-bottom: -10px;
 }
 .microblog_reply_textarea textarea {
@@ -510,6 +511,6 @@ a.tinylytics_webring {
 }
 .microblog_reply_button {
     text-align: right;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-top: -20px;
 }
