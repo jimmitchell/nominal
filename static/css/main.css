@@ -64,7 +64,7 @@ body {
     font-size: 1.8rem;
     line-height: 1.5;
     margin: 0 auto;
-    max-width: 100rem;
+    /* max-width: 100rem; */
     padding: 1rem 2rem;
     -moz-font-feature-settings:    "kern" 1; 
     -ms-font-feature-settings:     "kern" 1; 
@@ -164,7 +164,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin: 2rem 0 4rem 0;
-    padding: 1.25rem 0;
+    padding: 1.25rem 5rem;
 }
 header .profile-photo {
     width: 32px;
@@ -319,11 +319,13 @@ footer p {
     header {
         display: block;
         margin-top: 1rem;
+        padding-right: 0;
+        padding-left: 0;
     }
     header .profile-photo {
         width: 48px;
         height: auto;
-        margin: 0 auto 10px;
+        margin: 0 auto 15px;
     }
     .site-title {
         text-align: center;
