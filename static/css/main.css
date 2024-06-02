@@ -319,6 +319,7 @@ footer p {
     header {
         display: block;
         margin-top: 1rem;
+        padding-bottom: 3rem;
         padding-right: 0;
         padding-left: 0;
     }
