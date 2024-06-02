@@ -160,10 +160,10 @@ input[type=email] {
 }
 header {
     align-items: center;
-    /* border-bottom: 1px solid var(--accent-2); */
+    border-bottom: 1px solid var(--accent-2);
     display: flex;
     justify-content: space-between;
-    margin: 2rem 0 4rem 0;
+    margin: 0 0 5rem 0;
     padding: 1.25rem 2rem;
 }
 header .profile-photo {
@@ -288,7 +288,7 @@ article ol li {
 .main-nav {
     margin: 0;
     padding: 2rem 0;
-    /* border-top: 1px solid var(--accent-2); */
+    border-top: 1px solid var(--accent-2);
 }
 .main-nav ul {
     list-style: none;
