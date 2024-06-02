@@ -198,7 +198,7 @@ header a:hover, header a:active {
     flex-grow: 1;
 }
 .site-nav li {
-    margin-left: 2rem;
+    margin-left: 1.5rem;
     font-size: 1.5rem;
     justify-content: flex-end;
 }
