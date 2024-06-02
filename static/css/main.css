@@ -206,7 +206,7 @@ main,
 footer,
 .photos-grid {
     margin: 0 auto;
-    max-width: 68rem;
+    max-width: 74rem;
 }
 article {
     margin: 0;
@@ -331,7 +331,7 @@ footer p {
         text-align: center;
         margin: 0.5rem auto 1.5rem;
         width: 100%;
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .site-nav ul {
         display: flex;
