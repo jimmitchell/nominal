@@ -254,8 +254,6 @@ article img {
     width: calc(100% + 80px);
     height: auto;
     border-radius: 6px;
-    max-width: calc(100% + 80px);
-    margin: 2rem calc(-4rem);
     max-width: 100%;
     margin: 2rem auto;
 }
