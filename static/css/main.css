@@ -64,7 +64,6 @@ body {
     font-size: 1.8rem;
     line-height: 1.5;
     margin: 0 auto;
-    /* max-width: 100rem; */
     padding: 1rem 2rem;
     -moz-font-feature-settings:    "kern" 1; 
     -ms-font-feature-settings:     "kern" 1; 
@@ -255,8 +254,8 @@ article img {
     width: calc(100% + 80px);
     height: auto;
     border-radius: 6px;
-    /* max-width: calc(100% + 80px);
-    margin: 2rem calc(-4rem); */
+    max-width: calc(100% + 80px);
+    margin: 2rem calc(-4rem);
     max-width: 100%;
     margin: 2rem auto;
 }
@@ -372,7 +371,7 @@ footer p {
 }
 .photos-grid--style-masonry .photos-grid__item img {
     margin-bottom: 0;
-    /* border-radius: 6px; */
+    border-radius: 6px;
 }
 .photos-grid--style-masonry .photos-grid__item img:hover {
     opacity: 0.8;
