@@ -65,6 +65,7 @@ body {
     line-height: 1.6;
     margin: 0 auto;
     padding: 1rem 2rem;
+    max-width: 64rem;
     -moz-font-feature-settings:    "kern" 1; 
     -ms-font-feature-settings:     "kern" 1; 
     -o-font-feature-settings:      "kern" 1; 
@@ -162,8 +163,8 @@ header {
     border-bottom: 1px solid var(--accent-2);
     display: flex;
     justify-content: space-between;
-    margin: 0 0 5rem 0;
-    padding: .5rem 1rem 1.5rem 1rem;
+    margin: 0 auto 5rem auto;
+    padding: .5rem 0 1.5rem 0;
 }
 header .profile-photo {
     width: 32px;
@@ -200,12 +201,6 @@ header a:hover, header a:active {
     margin-left: 1.5rem;
     font-size: 1.5rem;
     justify-content: flex-end;
-}
-main,
-footer,
-.photos-grid {
-    margin: 0 auto;
-    max-width: 64rem;
 }
 article {
     margin: 0;
