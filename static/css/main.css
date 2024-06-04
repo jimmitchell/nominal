@@ -204,7 +204,7 @@ header a:hover, header a:active {
 }
 article {
     margin: 0;
-    padding-bottom: 1.5rem;
+    padding-bottom: 3rem;
 }
 main.archive article {
     padding-bottom: 3.5rem;
