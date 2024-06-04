@@ -166,12 +166,6 @@ header {
     margin: 0 auto 5rem auto;
     padding: .5rem 0 1.5rem 0;
 }
-header .profile-photo {
-    width: 32px;
-    height: auto;
-    border-radius: 6px;
-    margin-right: .75rem;
-}
 header a {
     color: var(--text);
 }
@@ -180,7 +174,11 @@ header a:hover, header a:active {
 }
 .profile-photo {
     flex-grow: 1;
-    min-width: 32px;
+    width: 30px;
+    height: auto;
+    border-radius: 6px;
+    margin-right: 1rem;
+    margin-top: 2px;
 }
 .site-title {
     margin: 0;
