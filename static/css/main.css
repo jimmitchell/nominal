@@ -327,7 +327,7 @@ footer p {
     }
     .site-title {
         text-align: center;
-        margin: 1.5rem auto;
+        margin: 1rem auto 1.5rem auto;
         width: 100%;
         font-size: 1.8rem;
     }
