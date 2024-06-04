@@ -327,21 +327,22 @@ footer p {
     }
     .site-title {
         text-align: center;
-        margin: 0.5rem auto 1.5rem;
+        margin: 1.5rem auto;
         width: 100%;
         font-size: 1.8rem;
     }
     .site-nav ul {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         text-align: center;
-        padding: 0 20px;
+        padding: 0;
         width: 100%;
         font-size: 1.8rem;
     }
     .site-nav li {
         display: inline-block;
         margin: 0;
+        font-size: 1.8rem;
     }
 }
 
