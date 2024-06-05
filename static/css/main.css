@@ -303,10 +303,7 @@ footer p {
 }
 
 @media only screen and (max-width: 570px) {
-    body {
-        line-height: 1.5;
-    }
-    header {
+    /* header {
         display: block;
         margin-top: 1rem;
         padding-bottom: 3rem;
@@ -317,19 +314,19 @@ footer p {
         width: 48px;
         height: auto;
         margin: 0 auto 15px;
-    }
+    } */
     .site-title {
-        text-align: center;
+        /* text-align: center; */
         margin: 1rem auto 1.5rem auto;
         width: 100%;
         font-size: 1.7rem;
     }
     .site-nav ul {
         display: flex;
-        justify-content: space-around;
-        text-align: center;
+        justify-content: space-between;
+        text-align: right;
         padding: 0;
-        width: 100%;
+        /* width: 100%; */
         font-size: 1.7rem;
     }
     .site-nav li {
