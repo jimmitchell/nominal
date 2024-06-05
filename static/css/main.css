@@ -306,21 +306,16 @@ footer p {
     header {
         padding: 2rem 0 2.5rem 0;
     }
-    .site-title {
-        font-size: 1.7rem;
-    }
     .site-nav ul {
         display: flex;
         justify-content: space-between;
         text-align: right;
         padding: 0;
-        font-size: 1.7rem;
     }
     .site-nav li {
         display: inline-block;
         margin: 0;
-        font-size: 1.7rem;
-        margin-left: 10px;
+        margin-left: 15px;
     }
 }
 
