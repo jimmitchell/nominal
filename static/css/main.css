@@ -199,7 +199,7 @@ header a:hover, header a:active {
     justify-content: flex-end;
 }
 article {
-    margin: 0;
+    margin: 0 0 3rem;
     padding-bottom: 3rem;
 }
 main.archive article {
